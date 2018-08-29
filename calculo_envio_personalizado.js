@@ -55,7 +55,7 @@ var regiones= [
           $("#billing_state").val(id_region_seleccionada);
          }
 
-         // alert(id_region_seleccionada);
+         // console.log(id_region_seleccionada);
           select_comuna.empty();
           select_comuna.html("");
           select_comuna.append($('<option>').text("Selecciona una comuna..."));  
@@ -118,7 +118,6 @@ var regiones= [
 
   cambia_region($("#billing_region"),$("#billing_city"));
 
-  //algo de css
   $(".shipping td").first().attr("colspan",2);
 
   $('body').on('change','#billing_city', function() {
